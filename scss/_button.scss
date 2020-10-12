@@ -1,0 +1,59 @@
+/* Main Button Area css
+============================================================================================ */
+.main_btn{
+	background: $baseColor;
+	color: #fff;
+	text-align: center;
+	padding: 0px 23px;
+	display: inline-block;
+	line-height: 40px;
+	font-weight: bold;
+	font-family: $rob;
+	text-transform: uppercase;
+	border: 1px solid $baseColor;
+	&:hover{
+		color: $baseColor;
+		background: transparent;
+		border-color: $baseColor;
+	}
+}
+.white_bg_btn{
+	background: #f9f9ff;
+	color: $dip;
+	text-align: center;
+	padding: 0px 26px;
+	display: inline-block;
+	line-height: 40px;
+	font-weight: bold;
+	font-family: $rob;
+	text-transform: uppercase;
+	border: 1px solid #eeeeee;
+	&:hover{
+		color: $baseColor;
+		background: transparent;
+		border-color: $baseColor;
+	}
+}
+.submit_btn{
+	background: $baseColor;
+	color: #fff;
+	text-align: center;
+	padding: 0px 23px;
+	display: inline-block;
+	line-height: 40px;
+	font-weight: bold;
+	font-family: $rob;
+	text-transform: uppercase;
+	border: 1px solid $baseColor;
+	border-radius: 0px;
+	outline: none !important;
+	box-shadow: none !important;
+	cursor: pointer;
+	&:hover{
+		color: $baseColor;
+		background: transparent;
+		border-color: $baseColor;
+	}
+}
+/* End Main Button Area css
+============================================================================================ */

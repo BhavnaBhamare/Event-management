@@ -1,0 +1,66 @@
+.timer_area{
+	
+}
+.timer_inner{
+	text-align: center;
+	background: url(../img/timer-bg.png) no-repeat scroll center center;
+	color: #fff;
+	overflow: hidden;
+	h5{
+		font-size: 36px;
+		font-family: $play;
+		font-weight: bold;
+		margin-bottom: 35px;
+	}
+	p{
+		font-size: 24px;
+		font-family: $play;
+		font-weight: bold;
+		margin-bottom: 0px;
+		margin-top: 25px;
+	}
+	.timer{
+		max-width: 560px;
+		margin: auto;
+		background: rgba(255, 255, 255, .30);
+		display: flex;
+		flex-wrap: wrap;
+		position: relative;
+		&:before{
+			content: "";
+			background: url(../img/timer-shap-1.png) no-repeat;
+			height: 186px;
+			width: 234px;
+			position: absolute;
+			left: -100px;
+    		bottom: -87px;
+		}
+		&:after{
+			content: "";
+			background: url(../img/timer-shap-2.png) no-repeat;
+			height: 147px;
+			width: 175px;
+			position: absolute;
+			right: -87px;
+    		top: -72px;
+		}
+		.timer__section{
+			flex: 0 0 25%;
+			max-width: 25%;
+			padding-top: 30px;
+			padding-bottom: 35px;
+			.timer__number{
+				font-size: 36px;
+				color: #fff;
+				font-family: $play;
+				font-weight: bold;
+				font-style: italic;
+			}
+			.timer__label{
+				font-size: 14px;
+				font-family: $rob;
+				margin-top: 15px;
+			}
+		}
+	}
+}

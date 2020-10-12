@@ -1,0 +1,67 @@
+/* Footer Area css
+============================================================================================ */
+.footer_area{
+	
+}
+.footer_inner{
+	background: #f9f9ff;
+	text-align: center;
+	img{
+		margin-bottom: 30px;
+	}
+	.f_menu{
+		margin-bottom: 40px;
+		li{
+			display: inline-block;
+			margin-right: 40px;
+			a{
+				color: $dip;
+				font-family: $rob;
+				font-size: 12px;
+				text-transform: uppercase;
+				font-weight: 500;
+			}
+			&:last-child{
+				margin-right: 0px;
+			}
+			&:hover{
+				a{
+					color: $baseColor;
+				}
+			}
+		}
+	}
+	p{
+		font-size: 14px;
+		color: $pfont;
+		font-family: $rob;
+		font-weight: 300;
+		i{
+			color: $baseColor;
+		}
+		a{
+			color: $baseColor;
+		}
+	}
+}
+.f_social{
+	margin-bottom: 45px;
+	li{
+		display: inline-block;
+		margin-right: 20px;
+		a{
+			color: #cccccc;
+			font-size: 14px;
+		}
+		&:last-child{
+			margin-right: 0px;
+		}
+		&:hover{
+			a{
+				color: $baseColor;
+			}
+		}
+	}
+}
+/* End Footer Area css
+============================================================================================ */
