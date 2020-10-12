@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 12, 2019 11:57:25 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.pojo.Colntactus" table="colntactus" catalog="eventmanagement">
+        <id name="cid" type="java.lang.Integer">
+            <column name="cid" />
+            <generator class="identity" />
+        </id>
+        <property name="cname" type="string">
+            <column name="cname" length="200" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="200" />
+        </property>
+        <property name="message" type="string">
+            <column name="message" length="200" />
+        </property>
+        <property name="phno" type="string">
+            <column name="phno" length="200" />
+        </property>
+    </class>
+</hibernate-mapping>

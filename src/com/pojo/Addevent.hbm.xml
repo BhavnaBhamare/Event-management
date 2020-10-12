@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 12, 2019 11:57:25 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.pojo.Addevent" table="addevent" catalog="eventmanagement">
+        <id name="eid" type="java.lang.Integer">
+            <column name="eid" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="registration" class="com.pojo.Registration" fetch="select">
+            <column name="regid" />
+        </many-to-one>
+        <property name="eventtype" type="string">
+            <column name="eventtype" length="200" />
+        </property>
+        <property name="eventname" type="string">
+            <column name="eventname" length="200" />
+        </property>
+        <property name="cost" type="java.lang.Double">
+            <column name="cost" precision="22" scale="0" />
+        </property>
+        <property name="facility" type="string">
+            <column name="facility" length="200" />
+        </property>
+        <property name="eventimage" type="string">
+            <column name="eventimage" length="200" />
+        </property>
+        <set name="bookings" table="booking" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="eventid" />
+            </key>
+            <one-to-many class="com.pojo.Booking" />
+        </set>
+        <set name="feedbacks" table="feedback" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="eid" />
+            </key>
+            <one-to-many class="com.pojo.Feedback" />
+        </set>
+    </class>
+</hibernate-mapping>
